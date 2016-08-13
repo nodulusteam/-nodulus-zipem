@@ -34,7 +34,7 @@ angular.module('nodulus')
    
     $scope.browseFolder = function (path) { 
     
-        var folders = $resource("zipem/folderpath");
+        var folders = $resource("@nodulus/zipem/folderpath");
          
         folders.query({ path: $scope.ProjectPath, date: $scope.dt },  function (data) {
             $scope.FolderFileList = data;
@@ -49,7 +49,7 @@ angular.module('nodulus')
 
         localStorage.setItem("zipem", JSON.stringify(persisted));
 
-        var ziper = $resource("zipem/zipit");
+        var ziper = $resource("@nodulus/zipem/zipit");
         
         ziper.get(persisted, function (data) {
             data.filename = data.filename.replace(/\//g, '\\');
@@ -63,7 +63,7 @@ angular.module('nodulus')
 
 
     $scope.getFolders = function (val) {
-        var folders = $resource("zipem/getFolders");
+        var folders = $resource("@nodulus/zipem/getFolders");
 
         return folders.query({ "term": val }).$promise.then(function (response) {
             

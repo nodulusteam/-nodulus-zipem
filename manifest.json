@@ -5,7 +5,7 @@
   "dependencies": [ ],
   "routes": [
     {
-      "route": "/zipem",
+      "route": "/",
       "path": "zipem.js"
     }
   ],
