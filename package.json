@@ -1,6 +1,6 @@
 {
   "name": "@nodulus/zipem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "date based zip utility",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,10 @@
     "utility",     
     "nodulus-extension"
   ],
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/nodulusteam/-nodulus-zipem"
+  },
   "author": "nodulus",
   "license": "ISC",
   "dependencies": {
